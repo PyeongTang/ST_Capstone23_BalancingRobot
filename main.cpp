@@ -58,7 +58,7 @@ int main() {
 
     while (plant1.Is_Finished() == 0) {
         printValue(&pc, &motor1, &plant1, refCount, true, true, 0.1);
-        if (!shutdown) break;
+        if (shutdown.read() == 0) break;
     }
     
     printEndPoint(&pc);
