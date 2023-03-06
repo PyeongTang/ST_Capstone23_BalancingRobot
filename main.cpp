@@ -56,8 +56,9 @@ int main() {
     // positionX = topPlate.getPositionX();
     // positionY = topPlate.getPositionY();
 
-    while (plant1.Is_Finished() == 0 && shutdown == 1) {
+    while (plant1.Is_Finished() == 0) {
         printValue(&pc, &motor1, &plant1, refCount, true, true, 0.1);
+        if (!shutdown) break;
     }
     
     printEndPoint(&pc);
