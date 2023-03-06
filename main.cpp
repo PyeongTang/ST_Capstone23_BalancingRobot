@@ -6,7 +6,7 @@
 Serial  pc(USBTX, USBRX);
 
 ////////////  Count Set  ///////////
-float refCount          =   220.0;
+float refCount          =   330.0;
 ///////////////////////////////////
 /*
     110 Count = 1 Revolution = 360 Degree = 2 Pi Radian
